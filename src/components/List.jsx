@@ -8,8 +8,10 @@ export default function List({ tasks, handleInputTextChange }) {
     setShow(!show);
   }
 
-  const a = handleInputTextChange(text);
-  a.map((m) => console.log(m));
+  const a = handleInputTextChange("meet");
+  // console.log(a.name);
+  console.log(a);
+  // a.map((m) => console.log(m));
   // }
 
   return (

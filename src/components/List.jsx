@@ -7,12 +7,9 @@ export default function List({ tasks, handleInputTextChange }) {
   function handleClick() {
     setShow(!show);
   }
-
-  const a = handleInputTextChange(text);
-  // console.log(a.name);
-  console.log(a);
-  // a.map((m) => console.log(m));
-  // }
+  if (text) {
+    tasks = handleInputTextChange(text);
+  }
 
   return (
     <>
@@ -22,7 +19,6 @@ export default function List({ tasks, handleInputTextChange }) {
           placeholder="Search..."
           onChange={(e) => {
             setText(e.target.value);
-            // handleInputTextChange(e.target.value);
           }}
         />
         <label>
